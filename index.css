@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Mulish:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+
+.justify-content-center {
+    justify-content: center;
+}
+
+/*Header*/
+#header {
+    justify-content: space-between;
+}
+
+#header-img {
+    padding-left: 15px;
+}
+
+main {
+padding-bottom: 48px;
+}
+
+
+header {
+    padding: 20px;
+    overflow: hidden;
+    /*background-color: transparent;*/
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9
+}
+
+header a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header a:hover {
+    background-color: #f85afc;
+    color: white;
+    border-radius: 12px;
+}
+
+/*header a.active {*/
+/*    background-color: #4CAF50;*/
+/*    color: white;*/
+/*}*/
+
+
+/*banner*/
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+}
+
+
+#intro {
+
+}
+
+#intro-title {
+    max-width: 400px;
+}
+
+#intro-description {
+    padding-top: 12px;
+    font-size: 24px;
+    max-width: 600px;
+    font-weight: lighter;
+}
+
+.banner {
+    padding-left: 10%;
+    flex-direction: column;
+    background-image: url(assets/h1_hero.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 650px;
+    color: white;
+}
+
+/*Service area*/
+.service-area {
+    margin-top: -48px;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+.service-item {
+    margin: 16px;
+    display: flex;
+    box-shadow: 0 25px 60px rgba(66, 85, 164, 0.2);
+    padding: 29px 24px;
+    border-radius: 20px;
+    background: #fff
+}
+
+@media screen and (max-width: 992px) {
+    .service-area {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Feature survey*/
+#feature-show-case {
+    justify-content: space-around;
+    padding: 0 5%;
+
+}
+
+.feature-title {
+    padding: 56px 0 24px  0 ;
+    color: #5050e2;
+    text-align: center;
+}
+
+.feature-image {
+    object-fit: fill;
+    width: 100%;
+}
+
+.card {
+    box-shadow: 0 25px 60px rgba(66, 85, 164, 0.2);
+    margin: 0 12px;
+    width: 65%;
+    border-radius: 16px;
+}
+
+.caption {
+    padding: 12px 8px;
+    flex-direction: column;
+}
+
+.h3-caption {
+    color: #5050e2;
+    padding-top: 8px;
+}
+
+
+.restaurant-name p  {
+    display: inline-block;
+    color: #6E7697;
+}
+.restaurant-name span {
+    color: #FF7B2E;
+    font-size: 12px;
+}
+.rating i {
+    font-size: 14px;
+    color: #FF7B2E;
+}
+
+.price{
+    cursor: pointer;
+    font-weight: 700;
+    color: #4255A4;
+    font-size: 23px;
+}
+.course-footer{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: space-between;
+}
+
+.border-btn{
+    height: 50px;
+    justify-content: center;
+
+    align-content: center;
+    border: 1px solid #ff9900;
+}
+.border-btn a{
+    margin: auto;
+    baseline-shift: unset;
+}
+.border-btn:hover{
+    background-color: #ff9900;
+    color: white;
+}
+
+
+@media screen and (min-width: 992px) {
+    #feature-show-case {
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #feature-show-case {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 24px 0;
+    }
+}
+
+/*topic show case*/
+.single-topic {
+    position: relative;
+    margin: 1%;
+}
+
+/*footer*/
+.footer-wrappper {
+    height: 20%;
+    padding: 24px 0 ;
+    color: white;
+}
+.footer-wrappper li{
+    color: white;
+}
+.footer-wrappper a{
+    color: white;
+}
+.footer-wrappper a:hover{
+    color: white;
+}
+.footer-bg {
+    background: #4255A4
+}
