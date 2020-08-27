@@ -228,8 +228,6 @@ h1 {
 
 /*topic show case*/
 .single-topic {
-    position: relative;
-    margin: 1%;
 }
 
 /*footer*/
@@ -249,4 +247,7 @@ h1 {
 }
 .footer-bg {
     background: #4255A4
+}
+.topic-content{
+    padding-top: 16px;
 }
